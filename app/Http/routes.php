@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('phone', function () {
 
-    return App::make('Smartphone');
+    return view('phone', ['phone' => App::make('Smartphone')]);
 });
 
 Route::get('shorten', function () {
